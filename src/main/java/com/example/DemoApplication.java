@@ -10,6 +10,7 @@ public class DemoApplication {
 
 		SpringApplication.run(DemoApplication.class, args);
 		System.out.println("done some changes in the Demo application files");
+		System.out.println("This is latest information added it on 2 Jan 2026");
 	}
 
 }
