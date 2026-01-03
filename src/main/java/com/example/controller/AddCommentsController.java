@@ -15,7 +15,7 @@ public class AddCommentsController {
     public AddCommentsController(AddCommentsService addCommentsService) {
         this.addCommentsService = addCommentsService;
     }
-    //this method is going to add id and comments 
+    //this method is going to add id and comments
     @PostMapping("/addComments")
     public ResponseEntity<AddComments> addComments(@RequestBody AddComments addComments) {
         addCommentsService.addComments(addComments);
