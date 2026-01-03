@@ -5,6 +5,8 @@ import com.example.repository.AddCommentsRepository;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @Data
 public class AddCommentsService {
@@ -18,5 +20,8 @@ public class AddCommentsService {
     public AddComments addComments(AddComments addComments) {
        return addCommentsRepository.save(addComments);
 
+    }
+    public Optional<AddComments> getComments(Long id) {
+        return addCommentsRepository.findById(id);
     }
 }
