@@ -24,4 +24,7 @@ public class AddCommentsService {
     public Optional<AddComments> getComments(Long id) {
         return addCommentsRepository.findById(id);
     }
+    public void deleteComments(Long id) {
+        addCommentsRepository.deleteById(id);
+    }
 }
