@@ -5,6 +5,7 @@ import com.example.repository.AddCommentsRepository;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -29,5 +30,8 @@ public class AddCommentsService {
     }
     public void deleteAllComments() {
         addCommentsRepository.deleteAll();
+    }
+    public List<AddComments> listAllComments() {
+       return addCommentsRepository.findAll();
     }
 }

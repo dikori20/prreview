@@ -6,6 +6,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class AddCommentsController {
     private final AddCommentsService addCommentsService;
@@ -23,6 +25,11 @@ public class AddCommentsController {
     @GetMapping("/deleteAllComments")
     public void deleteAllComments() {
         addCommentsService.deleteAllComments();
+    }
+
+    @GetMapping("/listAllComments")
+    public List<AddComments> listAllComments() {
+        return addCommentsService.listAllComments();
     }
 
 }
