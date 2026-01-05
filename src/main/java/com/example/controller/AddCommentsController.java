@@ -20,4 +20,9 @@ public class AddCommentsController {
         return ResponseEntity.ok(addComments);
     }
 
+    @GetMapping("/deleteAllComments")
+    public void deleteAllComments() {
+        addCommentsService.deleteAllComments();
+    }
+
 }

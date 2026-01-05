@@ -27,7 +27,7 @@ public class AddCommentsService {
     public void deleteComments(Long id) {
         addCommentsRepository.deleteById(id);
     }
-    public void deleteAllComments(Long id) {
+    public void deleteAllComments() {
         addCommentsRepository.deleteAll();
     }
 }
