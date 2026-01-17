@@ -34,7 +34,7 @@ public class AddCommentsController {
 
     @GetMapping("/deleteCommentById/{id}")
     public void deleteCommentById (@RequestParam("id") Long id) {
-        addCommentsService.deleteComments(id);
+        addCommentsService.deleteComments(id + 10);
 
     }
 }
