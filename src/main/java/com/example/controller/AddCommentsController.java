@@ -32,4 +32,9 @@ public class AddCommentsController {
         return addCommentsService.listAllComments();
     }
 
+    @GetMapping("/deleteCommentById/{id}")
+    public void deleteCommentById (@RequestParam("id") Long id) {
+        addCommentsService.deleteComments(id);
+
+    }
 }
