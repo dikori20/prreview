@@ -41,4 +41,8 @@ public class AddCommentsController {
     public void updateComments (@RequestParam("update") String updatedComments) {
         addCommentsService.updateComments(updatedComments);
     }
+    @PostMapping("/updateComment")
+    public AddComments updateCommentsData(@RequestBody AddComments addComments) {
+        return addCommentsService.updateCommentsData(addComments);
+    }
 }

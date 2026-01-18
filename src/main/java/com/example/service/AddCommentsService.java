@@ -37,5 +37,8 @@ public class AddCommentsService {
    public String updateComments(String updateComments) {
        return "This is update";
    }
+   public AddComments updateCommentsData(AddComments addComments) {
+        return addCommentsRepository.save(addComments);
+   }
 
 }
