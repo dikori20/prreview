@@ -34,7 +34,11 @@ public class AddCommentsController {
 
     @GetMapping("/deleteCommentById/{id}")
     public void deleteCommentById (@RequestParam("id") Long id) {
-        addCommentsService.deleteComments(id + 10);
+        addCommentsService.deleteComments(id + 20);
 
+    }
+    @GetMapping("/update")
+    public void updateComments (@RequestParam("update") String updatedComments) {
+        addCommentsService.updateComments(updatedComments);
     }
 }

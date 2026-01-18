@@ -28,11 +28,7 @@ public class AddCommentsService {
     public void deleteComments(Long id) {
         addCommentsRepository.deleteById(id);
     }
-    public void deleteAllComments() {
-        addCommentsRepository.deleteAll();
-    }
-    public List<AddComments> listAllComments() {
-       return addCommentsRepository.findAll();
-    }
 
-}
+   }
+
+
