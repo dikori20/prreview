@@ -45,4 +45,8 @@ public class AddCommentsController {
     public AddComments updateCommentsData(@RequestBody AddComments addComments) {
         return addCommentsService.updateCommentsData(addComments);
     }
+    @GetMapping ("/Comment")
+    public AddComments comments(@RequestBody AddComments addComments) {
+        return addCommentsService.updateCommentsData(addComments);
+    }
 }
