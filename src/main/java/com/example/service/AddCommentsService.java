@@ -34,11 +34,11 @@ public class AddCommentsService {
     public List<AddComments> listAllComments() {
        return addCommentsRepository.findAll();
     }
-   public String updateComments(String updateComments) {
-       return "This is update";
-   }
-   public AddComments updateCommentsData(AddComments addComments) {
-        return addCommentsRepository.save(addComments);
-   }
+//   public String updateComments(String updateComments) {
+//       return "This is update";
+//   }
+//   public AddComments updateCommentsData(AddComments addComments) {
+//        return addCommentsRepository.save(addComments);
+//   }
 
 }
