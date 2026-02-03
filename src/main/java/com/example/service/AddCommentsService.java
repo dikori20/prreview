@@ -43,5 +43,8 @@ public class AddCommentsService {
     public AddComments updateCommentsData2(AddComments addComments) {
         return addCommentsRepository.save(addComments);
     }
+    public AddComments updateCommentsData3(AddComments addComments) {
+        return addCommentsRepository.save(addComments);
+    }
 
 }
