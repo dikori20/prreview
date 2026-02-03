@@ -51,7 +51,13 @@ public class AddCommentsService {
         return addCommentsRepository.save(addComments);
 
     }
-    
+    public AddComments updateCommentsData5(AddComments addComments) {
+        System.out.println("updateCommentsData5---->");
+        addComments =null;
+        return addCommentsRepository.save(addComments);
+
+    }
+
 
 
 }
