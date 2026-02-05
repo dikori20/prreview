@@ -46,11 +46,7 @@ public class AddCommentsService {
     public AddComments updateCommentsData3(AddComments addComments) {
         return addCommentsRepository.save(addComments);
     }
-    public AddComments updateCommentsData4(AddComments addComments) {
-        System.out.println("updateCommentsData4---->");
-        return addCommentsRepository.save(addComments);
-
-    }
+   
 
 
 
